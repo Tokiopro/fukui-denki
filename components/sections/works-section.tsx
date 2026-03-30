@@ -2,34 +2,31 @@ import Image from "next/image";
 
 const works = [
   {
-    area: "越前市",
-    image:
-      "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=1935&auto=format&fit=crop",
-    alt: "照明交換",
-    title: "古い蛍光灯をLED照明に交換",
-    tags: ["照明工事", "省エネ"],
+    area: "鯖江市",
+    image: "/images/S__7151636_0.jpg",
+    alt: "エアコン入替",
+    title: "エアコン入替工事",
+    tags: ["エアコン", "入替工事"],
     quote:
-      "「部屋がとても明るくなり、電気代も下がると聞いて楽しみです。」",
+      "「新しいエアコンで快適になりました。取付もきれいで大満足です。」",
   },
   {
     area: "鯖江市",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc79b4?q=80&w=2069&auto=format&fit=crop",
-    alt: "分電盤工事",
-    title: "ブレーカー容量アップ工事",
-    tags: ["分電盤", "電気工事"],
+    image: "/images/S__7151632_0.jpg",
+    alt: "レンジフード入替",
+    title: "レンジフード入替工事",
+    tags: ["レンジフード", "入替工事"],
     quote:
-      "「電子レンジとドライヤーを同時に使っても落ちなくなりました！」",
+      "「換気の音が静かになって、吸い込みも良くなりました！」",
   },
   {
-    area: "福井市",
-    image:
-      "https://images.unsplash.com/photo-1558002038-10917738179d?q=80&w=2070&auto=format&fit=crop",
-    alt: "防犯カメラ",
-    title: "店舗防犯カメラ設置",
-    tags: ["防犯カメラ", "配線工事"],
+    area: "鯖江市",
+    image: "/images/S__7151621_0.jpg",
+    alt: "アンテナ取付",
+    title: "アンテナ・BS取付工事",
+    tags: ["アンテナ", "BS取付"],
     quote:
-      "「配線もきれいに隠してくれて、スマホで見れるので安心です。」",
+      "「映りもバッチリで、丁寧に取り付けてもらえました。」",
   },
 ];
 
@@ -51,6 +48,10 @@ export default function WorksSection() {
               className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 group"
             >
               <div className="h-56 bg-gray-200 relative overflow-hidden">
+                {/* Numbering Badge */}
+                <div className="absolute top-3 right-3 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center font-bold text-blue-600 text-sm z-10 shadow-sm">
+                  {String(idx + 1).padStart(2, "0")}
+                </div>
                 <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur text-white text-xs px-3 py-1 rounded-full z-10">
                   {work.area}
                 </div>
@@ -60,6 +61,8 @@ export default function WorksSection() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors duration-300" />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
@@ -75,9 +78,15 @@ export default function WorksSection() {
                     </span>
                   ))}
                 </div>
-                <p className="text-sm bg-orange-50 p-4 rounded-xl text-gray-700 italic border-l-4 border-orange-300">
-                  {work.quote}
-                </p>
+                <div className="relative">
+                  {/* Decorative quote mark */}
+                  <svg className="absolute -top-2 -left-1 w-6 h-6 text-orange-200" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                  <p className="text-sm bg-orange-50 p-4 rounded-xl text-gray-700 italic border-l-4 border-orange-300 pl-6">
+                    {work.quote}
+                  </p>
+                </div>
               </div>
             </div>
           ))}

@@ -51,14 +51,17 @@ export default function PricingSection() {
         </div>
 
         <div className="bg-white rounded-3xl shadow-xl border border-blue-100 overflow-hidden">
-          <div className="bg-blue-600 p-6 text-white text-center font-bold text-lg">
-            主な工事の参考価格（税込）
+          <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 p-6 text-white text-center font-bold text-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-[linear-gradient(110deg,transparent_25%,rgba(255,255,255,0.1)_50%,transparent_75%)] bg-[length:200%_100%] animate-shimmer" />
+            <span className="relative z-10">主な工事の参考価格（税込）</span>
           </div>
           <div className="divide-y divide-gray-100">
             {prices.map((price, idx) => (
               <div
                 key={idx}
-                className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-5 hover:bg-blue-50/50 transition-colors gap-2 sm:gap-0"
+                className={`flex flex-col sm:flex-row sm:justify-between sm:items-center p-5 hover:bg-blue-50/50 transition-colors gap-2 sm:gap-0 ${
+                  idx % 2 === 1 ? "bg-blue-50/30" : ""
+                }`}
               >
                 <div className="flex flex-col">
                   <span className="font-medium text-gray-700 flex items-center gap-2">
@@ -71,7 +74,7 @@ export default function PricingSection() {
                     </span>
                   )}
                 </div>
-                <span className="font-bold text-xl text-blue-700 self-end sm:self-auto shrink-0">
+                <span className="font-bold text-xl bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent self-end sm:self-auto shrink-0">
                   {price.price}
                 </span>
               </div>

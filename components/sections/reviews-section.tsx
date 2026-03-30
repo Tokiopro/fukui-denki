@@ -12,8 +12,15 @@ function Stars() {
 
 export default function ReviewsSection() {
   return (
-    <section id="reviews" className="py-20 bg-yellow-50/50 scroll-mt-20">
-      <div className="container mx-auto px-4">
+    <section id="reviews" className="py-20 bg-yellow-50/50 scroll-mt-20 relative overflow-hidden">
+      {/* Large decorative quote mark */}
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 opacity-[0.04] pointer-events-none">
+        <svg width="300" height="250" viewBox="0 0 24 24" fill="currentColor" className="text-gray-900">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+        </svg>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800">お客様の声</h2>
           <p className="mt-4 text-gray-600">

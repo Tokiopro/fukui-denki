@@ -28,8 +28,8 @@ export default function Header() {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-md py-2"
-          : "bg-white/95 backdrop-blur-sm py-3 shadow-sm"
+          ? "bg-white shadow-md py-2 border-b border-gray-100"
+          : "bg-white/95 backdrop-blur-sm py-3 shadow-sm border-b border-transparent"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -61,11 +61,12 @@ export default function Header() {
 
             <a
               href="tel:0778620815"
-              className="group flex flex-col md:flex-row items-center justify-center bg-yellow-400 hover:bg-yellow-500 text-blue-900 p-2 md:px-4 md:py-2 rounded-full shadow-sm hover:shadow-md transition-all transform hover:scale-105"
+              className="relative group flex flex-col md:flex-row items-center justify-center bg-yellow-400 hover:bg-yellow-500 text-blue-900 p-2 md:px-4 md:py-2 rounded-full shadow-sm hover:shadow-md transition-all transform hover:scale-105"
               title="電話をかける"
             >
-              <Phone size={20} className="md:mr-2 fill-current" />
-              <span className="hidden md:inline text-lg font-bold">
+              <span className="absolute inset-0 rounded-full animate-pulse-soft bg-yellow-400/50" />
+              <Phone size={20} className="md:mr-2 fill-current relative z-10" />
+              <span className="hidden md:inline text-lg font-bold relative z-10">
                 0778-62-0815
               </span>
             </a>
@@ -77,7 +78,7 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-medium text-gray-600 hover:text-blue-600 transition-colors text-sm"
+                className="relative font-medium text-gray-600 hover:text-blue-600 transition-colors text-sm after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-yellow-400 after:transition-all hover:after:w-full"
               >
                 {link.name}
               </a>
@@ -87,7 +88,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-full hover:bg-gray-100 text-gray-700"
+            className="lg:hidden p-2 rounded-full hover:bg-gray-100 text-gray-700 transition-colors"
           >
             {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
@@ -95,22 +96,29 @@ export default function Header() {
       </div>
 
       {/* Mobile Nav Dropdown */}
-      {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100">
-          <div className="flex flex-col p-4 gap-2">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMenuOpen(false)}
-                className="text-base font-medium text-gray-700 py-3 px-4 rounded-lg hover:bg-orange-50"
-              >
-                {link.name}
-              </a>
-            ))}
-          </div>
+      <div
+        className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 transition-all duration-300 overflow-hidden ${
+          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="flex flex-col p-4 gap-2">
+          {navLinks.map((link, idx) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-base font-medium text-gray-700 py-3 px-4 rounded-lg hover:bg-orange-50 transition-colors"
+              style={{
+                animation: isMenuOpen
+                  ? `fade-right 300ms ease-out ${idx * 50}ms both`
+                  : "none",
+              }}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
-      )}
+      </div>
     </header>
   );
 }

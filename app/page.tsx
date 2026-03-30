@@ -9,6 +9,8 @@ import ReviewsSection from "@/components/sections/reviews-section";
 import ProcessSection from "@/components/sections/process-section";
 import CompanySection from "@/components/sections/company-section";
 import Footer from "@/components/layout/footer";
+import ScrollReveal from "@/components/ui/scroll-reveal";
+import StaggerChildren from "@/components/ui/stagger-children";
 
 export default function Home() {
   return (
@@ -16,14 +18,38 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <GreetingSection />
-        <ServicesSection />
-        <AreaSection />
-        <WorksSection />
-        <PricingSection />
-        <ReviewsSection />
-        <ProcessSection />
-        <CompanySection />
+
+        <ScrollReveal animation="fade-up">
+          <GreetingSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <ServicesSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <AreaSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <WorksSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <PricingSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <ReviewsSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <ProcessSection />
+        </ScrollReveal>
+
+        <ScrollReveal animation="fade-up">
+          <CompanySection />
+        </ScrollReveal>
       </main>
       <Footer />
     </>

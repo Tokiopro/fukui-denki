@@ -70,9 +70,9 @@ export default function ServicesSection() {
           {serviceHome.map((service, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl hover:shadow-blue-100/50 hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
             >
-              <div className="w-16 h-16 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:bg-yellow-400 group-hover:text-blue-900 transition-colors">
+              <div className="w-16 h-16 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:bg-gradient-to-br group-hover:from-yellow-300 group-hover:to-orange-400 group-hover:text-blue-900 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-yellow-200/50">
                 {service.icon}
               </div>
               <h3 className="font-bold text-gray-800 mb-2">{service.name}</h3>

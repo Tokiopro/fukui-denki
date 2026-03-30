@@ -1,12 +1,12 @@
-import Image from "next/image";
-import { PenTool } from "lucide-react";
+import { PenTool, Camera } from "lucide-react";
 
 export default function GreetingSection() {
   return (
     <section className="py-16 md:py-24 bg-orange-50 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2" />
+      {/* Decorative background elements with pulse */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft translate-y-1/2 -translate-x-1/2" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-orange-200 rounded-full mix-blend-multiply filter blur-2xl animate-pulse-soft" style={{ animationDelay: "1s" }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto bg-white rounded-3xl p-6 md:p-12 shadow-xl border-4 border-white ring-4 ring-orange-100">
@@ -15,13 +15,11 @@ export default function GreetingSection() {
             <div className="w-full md:w-2/5 flex-shrink-0">
               <div className="relative mx-auto max-w-sm transform rotate-2 hover:rotate-0 transition-transform duration-500">
                 <div className="absolute inset-0 bg-yellow-300 rounded-2xl transform translate-x-3 translate-y-3" />
-                <div className="relative bg-gray-200 rounded-2xl overflow-hidden aspect-[4/5] shadow-lg border-2 border-white">
-                  <Image
-                    src="https://images.unsplash.com/photo-1542596768-5d1d21f1cf3d?q=80&w=1887&auto=format&fit=crop"
-                    alt="代表 佐々木義徳"
-                    fill
-                    className="object-cover"
-                  />
+                <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden aspect-[4/5] shadow-lg border-2 border-white flex items-center justify-center">
+                  <div className="text-center text-gray-400">
+                    <Camera className="w-12 h-12 mx-auto mb-3 text-gray-300" />
+                    <p className="text-sm font-medium">写真準備中</p>
+                  </div>
                 </div>
                 <div className="absolute -bottom-6 -left-4 bg-white px-6 py-3 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center">
                   <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">

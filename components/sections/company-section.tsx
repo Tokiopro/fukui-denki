@@ -12,7 +12,7 @@ export default function CompanySection() {
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <tbody className="divide-y divide-gray-100">
-                <tr>
+                <tr className="hover:bg-gray-50/50 transition-colors">
                   <th className="py-4 px-2 text-gray-500 font-medium whitespace-nowrap w-32">
                     屋号
                   </th>
@@ -20,7 +20,7 @@ export default function CompanySection() {
                     佐々木電工
                   </td>
                 </tr>
-                <tr>
+                <tr className="hover:bg-gray-50/50 transition-colors">
                   <th className="py-4 px-2 text-gray-500 font-medium">
                     代表者
                   </th>
@@ -28,7 +28,7 @@ export default function CompanySection() {
                     佐々木 義徳（ささき よしのり）
                   </td>
                 </tr>
-                <tr>
+                <tr className="hover:bg-gray-50/50 transition-colors">
                   <th className="py-4 px-2 text-gray-500 font-medium">
                     所在地
                   </th>
@@ -45,7 +45,7 @@ export default function CompanySection() {
                     </a>
                   </td>
                 </tr>
-                <tr>
+                <tr className="hover:bg-gray-50/50 transition-colors">
                   <th className="py-4 px-2 text-gray-500 font-medium">
                     登録番号
                   </th>
@@ -53,13 +53,13 @@ export default function CompanySection() {
                     登録電気工事業者 福井県知事登録 第 202200265
                   </td>
                 </tr>
-                <tr>
+                <tr className="hover:bg-gray-50/50 transition-colors">
                   <th className="py-4 px-2 text-gray-500 font-medium">
                     営業時間
                   </th>
                   <td className="py-4 px-2 text-gray-800">8:00 〜 20:00</td>
                 </tr>
-                <tr>
+                <tr className="hover:bg-gray-50/50 transition-colors">
                   <th className="py-4 px-2 text-gray-500 font-medium">
                     連絡先
                   </th>
@@ -67,9 +67,11 @@ export default function CompanySection() {
                     <div className="flex flex-col sm:flex-row gap-4 mt-1">
                       <a
                         href="tel:0778620815"
-                        className="flex items-center gap-2 bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors w-fit"
+                        className="relative flex items-center gap-2 bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors w-fit group"
                       >
-                        <Phone size={16} /> 0778-62-0815
+                        <span className="absolute inset-0 rounded-lg animate-pulse-soft bg-yellow-400/40" />
+                        <Phone size={16} className="relative z-10" />
+                        <span className="relative z-10">0778-62-0815</span>
                       </a>
                       <a
                         href="mailto:sasaki0777@gmail.com?subject=【HPからお問い合わせ】"
