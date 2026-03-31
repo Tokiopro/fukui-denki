@@ -1,4 +1,5 @@
-import { PenTool, Camera } from "lucide-react";
+import Image from "next/image";
+import { PenTool } from "lucide-react";
 
 export default function GreetingSection() {
   return (
@@ -15,11 +16,13 @@ export default function GreetingSection() {
             <div className="w-full md:w-2/5 flex-shrink-0">
               <div className="relative mx-auto max-w-sm transform rotate-2 hover:rotate-0 transition-transform duration-500">
                 <div className="absolute inset-0 bg-yellow-300 rounded-2xl transform translate-x-3 translate-y-3" />
-                <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden aspect-[4/5] shadow-lg border-2 border-white flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <Camera className="w-12 h-12 mx-auto mb-3 text-gray-300" />
-                    <p className="text-sm font-medium">写真準備中</p>
-                  </div>
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-lg border-2 border-white">
+                  <Image
+                    src="/images/電気_代表写真.jpg"
+                    alt="代表 佐々木 義徳"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -left-4 bg-white px-6 py-3 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center">
                   <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
