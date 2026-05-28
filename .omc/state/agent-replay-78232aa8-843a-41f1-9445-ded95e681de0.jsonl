@@ -5,3 +5,4 @@
 {"t":0,"agent":"ae39724","agent_type":"unknown","event":"agent_stop","success":true}
 {"t":0,"agent":"a8800f6","agent_type":"executor","event":"agent_stop","success":true,"duration_ms":226181}
 {"t":0,"agent":"a2bd564","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a4adb89","agent_type":"unknown","event":"agent_stop","success":true}

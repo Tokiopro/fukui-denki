@@ -41,14 +41,13 @@ export default function GreetingSection() {
                 <span className="bg-[#f0c832]/20 text-[#f0c832] px-4 py-1 rounded-full text-sm font-bold mb-2 inline-block border border-[#f0c832]/30">
                   ごあいさつ
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug">
+                <h2 className="text-2xl md:text-4xl font-bold text-white leading-snug" style={{ wordBreak: "keep-all" }}>
                   「ちょっと見てほしい」
                   <br />
-                  <span className="text-[#f0c832]">
-                    気軽に頼れる
-                  </span>
+                  <span className="text-[#f0c832]">気軽に頼れる</span>
                   <br />
-                  町の電気屋さんでありたい
+                  <span className="inline-block">町の電気屋さんで</span>
+                  <span className="inline-block">ありたい</span>
                 </h2>
               </div>
 

@@ -55,8 +55,10 @@ export default function ServicesSection() {
           <span className="text-[#2b5ea7] font-bold tracking-widest text-sm uppercase bg-white px-4 py-1 rounded-full shadow-sm">
             Menu
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-4 mb-4">
-            こんな工事、お任せください
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mt-4 mb-4" style={{ wordBreak: "keep-all" }}>
+            こんな工事、
+            <br className="md:hidden" />
+            お任せください
           </h2>
           <p className="text-gray-600">
             一般家庭の小さなお困りごとから、店舗の配線工事まで。
