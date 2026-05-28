@@ -36,9 +36,9 @@ export default function CompanySection() {
                     〒916-0084 福井県鯖江市小泉町30-5-15
                     <br />
                     <a
-                      href="https://goo.gl/maps/placeholder"
+                      href="https://maps.app.goo.gl/ugBP4m1XfRqHtxV2A"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="text-[#2b5ea7] text-sm hover:underline flex items-center gap-1 mt-1"
                     >
                       <MapPin size={14} /> Googleマップで見る
