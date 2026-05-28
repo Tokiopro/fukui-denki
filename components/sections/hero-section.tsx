@@ -16,41 +16,41 @@ export default function HeroSection() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#f0f4f8]/80 via-white/60 to-white/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b33] via-[#1a2744] to-[#1a2744]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#2b5ea7]/20 via-transparent to-transparent" />
       </div>
 
       {/* Floating Decorative Elements */}
       <div className="absolute top-20 right-[15%] w-24 h-24 bg-[#2b5ea7]/20 rounded-full blur-xl animate-float" />
-      <div className="absolute top-40 left-[10%] w-32 h-32 bg-blue-300/15 rounded-full blur-2xl animate-float-slow" />
-      <div className="absolute bottom-20 right-[25%] w-20 h-20 bg-[#1a2744]/10 rounded-full blur-lg animate-float-slow" />
+      <div className="absolute top-40 left-[10%] w-32 h-32 bg-[#2b5ea7]/15 rounded-full blur-2xl animate-float-slow" />
+      <div className="absolute bottom-20 right-[25%] w-20 h-20 bg-[#1a2744]/30 rounded-full blur-lg animate-float-slow" />
       <div className="absolute top-1/2 left-[5%] w-16 h-16 bg-[#2b5ea7]/10 rounded-full blur-xl animate-float" />
 
       <div className="container mx-auto px-4 relative z-10 text-center md:text-left">
         <HeroEntrance>
           <div className="max-w-3xl mx-auto md:mx-0">
             <HeroItem delay={0}>
-              <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-sm font-bold mb-6 border border-blue-200 shadow-sm">
+              <div className="inline-block bg-[#2b5ea7]/30 text-blue-200 px-4 py-1.5 rounded-full text-sm font-bold mb-6 border border-[#2b5ea7]/50 shadow-sm">
                 福井県嶺北エリア対応・地域密着16年
               </div>
             </HeroItem>
 
             <HeroItem delay={150}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 鯖江市の<br className="md:hidden" />
                 <span className="relative inline-block px-2 z-10">
-                  <span className="absolute inset-0 bg-[#2b5ea7] transform -rotate-1 rounded-lg -z-10 shadow-[0_0_20px_rgba(43,94,167,0.3)]" />
+                  <span className="absolute inset-0 bg-[#2b5ea7] transform -rotate-1 rounded-lg -z-10 shadow-[0_0_20px_rgba(43,94,167,0.5)]" />
                   町の電気工事屋さん
                 </span>
               </h1>
             </HeroItem>
 
             <HeroItem delay={300}>
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
+              <p className="text-xl md:text-2xl text-white mb-8 font-medium">
                 「電気の困った」に、<br className="md:hidden" />
                 すぐ駆けつけます。
                 <br />
-                <span className="text-base md:text-lg mt-2 inline-block text-gray-500">
+                <span className="text-base md:text-lg mt-2 inline-block text-gray-300">
                   コンセント1つからOK。有資格者が丁寧に対応します。
                 </span>
               </p>
@@ -67,7 +67,7 @@ export default function HeroSection() {
                 </a>
                 <a
                   href="mailto:sasaki0777@gmail.com?subject=【HPからお問い合わせ】"
-                  className="bg-white hover:bg-gray-50 text-[#2b5ea7] font-bold text-lg py-4 px-8 rounded-full shadow-md border-2 border-[#2b5ea7]/20 flex items-center justify-center gap-2 hover:text-[#1a2744] transition-all hover:-translate-y-0.5"
+                  className="bg-transparent hover:bg-white/10 text-white font-bold text-lg py-4 px-8 rounded-full border-2 border-white/50 flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5"
                 >
                   <Mail className="w-6 h-6" />
                   メールで相談

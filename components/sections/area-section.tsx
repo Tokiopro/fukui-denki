@@ -13,15 +13,15 @@ const cities = [
 
 export default function AreaSection() {
   return (
-    <section className="py-12 bg-white border-y border-gray-100 relative overflow-hidden">
+    <section className="py-12 bg-[#f0f4f8] border-y border-gray-200 relative overflow-hidden">
       {/* Dot pattern background */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, #000 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="bg-gray-800 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl">
+        <div className="bg-[#1a2744] rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl">
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <MapPin className="text-[#2b5ea7] animate-bounce-subtle" />
+              <MapPin className="text-[#f0c832] animate-bounce-subtle" />
               対応エリア
             </h3>
             <p className="text-lg mb-8 leading-relaxed text-gray-300">
@@ -31,7 +31,7 @@ export default function AreaSection() {
               </span>
               回っています。
               <br />
-              <span className="text-blue-300 font-bold mt-2 inline-block">
+              <span className="text-[#f0c832] font-bold mt-2 inline-block">
                 エリア外でもお気軽にご相談下さい。
               </span>
             </p>
@@ -41,8 +41,8 @@ export default function AreaSection() {
                   key={city}
                   className={`px-4 py-2 rounded-full font-bold border transition-all duration-300 cursor-default ${
                     city === "鯖江市"
-                      ? "bg-[#2b5ea7]/30 text-blue-300 border-[#2b5ea7]/50 ring-2 ring-[#2b5ea7]/30 shadow-lg shadow-[#2b5ea7]/10"
-                      : "bg-gray-700/50 text-blue-300 border-gray-600 hover:bg-gray-700"
+                      ? "bg-[#2b5ea7]/40 text-[#f0c832] border-[#2b5ea7]/60 ring-2 ring-[#2b5ea7]/30 shadow-lg shadow-[#2b5ea7]/10"
+                      : "bg-white/10 text-blue-200 border-white/20 hover:bg-white/20"
                   }`}
                 >
                   {city}
@@ -50,7 +50,7 @@ export default function AreaSection() {
               ))}
             </div>
           </div>
-          <div className="md:w-1/2 w-full h-64 bg-gray-600 rounded-2xl overflow-hidden relative border-4 border-gray-700">
+          <div className="md:w-1/2 w-full h-64 bg-[#0d1b33] rounded-2xl overflow-hidden relative border-4 border-white/10">
             <div className="absolute inset-0 flex items-center justify-center opacity-30">
               <MapPin size={64} className="text-white" />
             </div>

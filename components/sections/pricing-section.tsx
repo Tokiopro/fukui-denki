@@ -41,46 +41,46 @@ const prices = [
 
 export default function PricingSection() {
   return (
-    <section id="price" className="py-20 bg-white scroll-mt-20">
+    <section id="price" className="py-20 bg-[#0d1b33] scroll-mt-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800">料金の目安</h2>
-          <p className="mt-4 text-gray-600">
+          <h2 className="text-3xl font-bold text-white">料金の目安</h2>
+          <p className="mt-4 text-gray-300">
             ※現場の状況により変動しますが、事前に必ずお見積もりをご提示します。
           </p>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-xl border border-blue-100 overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 p-6 text-white text-center font-bold text-lg relative overflow-hidden">
+        <div className="bg-white/10 backdrop-blur rounded-3xl border border-white/15 overflow-hidden">
+          <div className="bg-gradient-to-r from-[#2b5ea7] via-[#1a2744] to-[#2b5ea7] p-6 text-white text-center font-bold text-lg relative overflow-hidden">
             <div className="absolute inset-0 bg-[linear-gradient(110deg,transparent_25%,rgba(255,255,255,0.1)_50%,transparent_75%)] bg-[length:200%_100%] animate-shimmer" />
             <span className="relative z-10">主な工事の参考価格（税込）</span>
           </div>
-          <div className="divide-y divide-gray-100">
+          <div className="divide-y divide-white/10">
             {prices.map((price, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col sm:flex-row sm:justify-between sm:items-center p-5 hover:bg-blue-50/50 transition-colors gap-2 sm:gap-0 ${
-                  idx % 2 === 1 ? "bg-blue-50/30" : ""
+                className={`flex flex-col sm:flex-row sm:justify-between sm:items-center p-5 hover:bg-white/5 transition-colors gap-2 sm:gap-0 ${
+                  idx % 2 === 1 ? "bg-white/5" : ""
                 }`}
               >
                 <div className="flex flex-col">
-                  <span className="font-medium text-gray-700 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-[#2b5ea7] rounded-full shrink-0" />
+                  <span className="font-medium text-white flex items-center gap-2">
+                    <span className="w-2 h-2 bg-[#f0c832] rounded-full shrink-0" />
                     {price.item}
                   </span>
                   {price.desc && (
-                    <span className="text-xs text-gray-500 mt-1 ml-4 whitespace-pre-wrap leading-relaxed">
+                    <span className="text-xs text-gray-300 mt-1 ml-4 whitespace-pre-wrap leading-relaxed">
                       {price.desc}
                     </span>
                   )}
                 </div>
-                <span className="font-bold text-xl bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent self-end sm:self-auto shrink-0">
+                <span className="font-bold text-xl text-[#f0c832] self-end sm:self-auto shrink-0">
                   {price.price}
                 </span>
               </div>
             ))}
           </div>
-          <div className="p-6 bg-blue-50 text-center text-sm text-blue-800 font-medium">
+          <div className="p-6 bg-white/5 text-center text-sm text-gray-300 font-medium border-t border-white/10">
             現地確認後に正式なお見積もりをいたします。
             <br />
             お見積もり後のキャンセルも可能ですので、まずはお気軽にご相談ください。

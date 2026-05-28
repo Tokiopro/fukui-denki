@@ -13,9 +13,9 @@ export default function Footer() {
   return (
     <>
       {/* Wave Separator */}
-      <div className="bg-gray-50 relative">
+      <div className="bg-[#f0f4f8] relative">
         <svg
-          className="w-full h-12 md:h-16 text-gray-900"
+          className="w-full h-12 md:h-16 text-[#0d1b33]"
           viewBox="0 0 1200 60"
           preserveAspectRatio="none"
           fill="currentColor"
@@ -24,7 +24,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <footer className="bg-gray-900 text-gray-400 py-12">
+      <footer className="bg-[#0d1b33] text-gray-400 py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6 text-white font-bold text-2xl">
             <div className="bg-[#2b5ea7] p-1 rounded transform -rotate-6">
@@ -37,7 +37,7 @@ export default function Footer() {
             <br />
             福井県知事登録 第 202200265
             <br />
-            <span className="text-[#2b5ea7]">インボイス登録店</span>
+            <span className="text-[#f0c832]">インボイス登録店</span>
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-sm">
             {navLinks.map((link) => (

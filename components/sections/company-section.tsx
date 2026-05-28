@@ -2,11 +2,11 @@ import { Building2, MapPin, Phone, Mail } from "lucide-react";
 
 export default function CompanySection() {
   return (
-    <section id="company" className="py-20 bg-gray-50 scroll-mt-20">
+    <section id="company" className="py-20 bg-[#f0f4f8] scroll-mt-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100">
           <h2 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2">
-            <Building2 className="text-blue-600" />
+            <Building2 className="text-[#2b5ea7]" />
             会社概要
           </h2>
           <div className="overflow-x-auto">
@@ -39,7 +39,7 @@ export default function CompanySection() {
                       href="https://goo.gl/maps/placeholder"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-blue-600 text-sm hover:underline flex items-center gap-1 mt-1"
+                      className="text-[#2b5ea7] text-sm hover:underline flex items-center gap-1 mt-1"
                     >
                       <MapPin size={14} /> Googleマップで見る
                     </a>
@@ -75,7 +75,7 @@ export default function CompanySection() {
                       </a>
                       <a
                         href="mailto:sasaki0777@gmail.com?subject=【HPからお問い合わせ】"
-                        className="flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-bold hover:bg-blue-200 transition-colors w-fit"
+                        className="flex items-center gap-2 bg-blue-100 text-[#2b5ea7] px-4 py-2 rounded-lg font-bold hover:bg-blue-200 transition-colors w-fit"
                       >
                         <Mail size={16} /> sasaki0777@gmail.com
                       </a>

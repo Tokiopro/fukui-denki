@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 
 function Stars() {
   return (
-    <div className="flex gap-1 text-[#2b5ea7] mb-4 mt-2">
+    <div className="flex gap-1 text-[#f0c832] mb-4 mt-2">
       {[...Array(5)].map((_, i) => (
         <Star key={i} fill="currentColor" size={20} />
       ))}
@@ -12,7 +12,7 @@ function Stars() {
 
 export default function ReviewsSection() {
   return (
-    <section id="reviews" className="py-20 bg-blue-50/30 scroll-mt-20 relative overflow-hidden">
+    <section id="reviews" className="py-20 bg-white scroll-mt-20 relative overflow-hidden">
       {/* Large decorative quote mark */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 opacity-[0.04] pointer-events-none">
         <svg width="300" height="250" viewBox="0 0 24 24" fill="currentColor" className="text-gray-900">
@@ -53,7 +53,7 @@ export default function ReviewsSection() {
 
           {/* Review 2 */}
           <div className="bg-white p-8 rounded-tl-3xl rounded-br-3xl rounded-tr-lg rounded-bl-lg shadow-sm border border-blue-100 relative mt-4">
-            <div className="absolute -top-4 left-8 bg-blue-600 text-white px-4 py-1 rounded-full font-bold text-sm shadow-sm">
+            <div className="absolute -top-4 left-8 bg-[#2b5ea7] text-white px-4 py-1 rounded-full font-bold text-sm shadow-sm">
               エアコン取付
             </div>
             <Stars />
@@ -66,7 +66,7 @@ export default function ReviewsSection() {
                 <p className="text-xs text-gray-400">2024.10</p>
               </div>
               <div className="w-10 h-10 bg-gray-200 rounded-full overflow-hidden">
-                <div className="w-full h-full bg-blue-100 flex items-center justify-center text-blue-400 font-bold">
+                <div className="w-full h-full bg-blue-100 flex items-center justify-center text-[#2b5ea7] font-bold">
                   Y
                 </div>
               </div>

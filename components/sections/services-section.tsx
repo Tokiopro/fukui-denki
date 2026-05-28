@@ -49,10 +49,10 @@ const serviceBiz: BizServiceItem[] = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20 bg-blue-50/50 scroll-mt-20">
+    <section id="services" className="py-20 bg-[#f0f4f8] scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <span className="text-blue-500 font-bold tracking-widest text-sm uppercase bg-white px-4 py-1 rounded-full shadow-sm">
+          <span className="text-[#2b5ea7] font-bold tracking-widest text-sm uppercase bg-white px-4 py-1 rounded-full shadow-sm">
             Menu
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-4 mb-4">

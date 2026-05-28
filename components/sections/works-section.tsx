@@ -32,7 +32,7 @@ const works = [
 
 export default function WorksSection() {
   return (
-    <section id="works" className="py-20 bg-gray-50 scroll-mt-20">
+    <section id="works" className="py-20 bg-[#f0f4f8] scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -49,10 +49,10 @@ export default function WorksSection() {
             >
               <div className="h-56 bg-gray-200 relative overflow-hidden">
                 {/* Numbering Badge */}
-                <div className="absolute top-3 right-3 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center font-bold text-blue-600 text-sm z-10 shadow-sm">
+                <div className="absolute top-3 right-3 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center font-bold text-[#2b5ea7] text-sm z-10 shadow-sm">
                   {String(idx + 1).padStart(2, "0")}
                 </div>
-                <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur text-white text-xs px-3 py-1 rounded-full z-10">
+                <div className="absolute top-3 left-3 bg-[#2b5ea7]/90 backdrop-blur text-white text-xs px-3 py-1 rounded-full z-10">
                   {work.area}
                 </div>
                 <Image
@@ -62,10 +62,10 @@ export default function WorksSection() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#1a2744]/0 group-hover:bg-[#1a2744]/10 transition-colors duration-300" />
               </div>
               <div className="p-6">
-                <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">
+                <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-[#2b5ea7] transition-colors">
                   {work.title}
                 </h3>
                 <div className="flex gap-2 mb-4">
