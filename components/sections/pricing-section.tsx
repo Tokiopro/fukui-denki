@@ -65,7 +65,7 @@ export default function PricingSection() {
               >
                 <div className="flex flex-col">
                   <span className="font-medium text-gray-700 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full shrink-0" />
+                    <span className="w-2 h-2 bg-[#2b5ea7] rounded-full shrink-0" />
                     {price.item}
                   </span>
                   {price.desc && (

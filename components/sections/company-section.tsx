@@ -67,9 +67,9 @@ export default function CompanySection() {
                     <div className="flex flex-col sm:flex-row gap-4 mt-1">
                       <a
                         href="tel:0778620815"
-                        className="relative flex items-center gap-2 bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors w-fit group"
+                        className="relative flex items-center gap-2 bg-[#e85a2a] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#d14e22] transition-colors w-fit group"
                       >
-                        <span className="absolute inset-0 rounded-lg animate-pulse-soft bg-yellow-400/40" />
+                        <span className="absolute inset-0 rounded-lg animate-pulse-soft bg-[#e85a2a]/40" />
                         <Phone size={16} className="relative z-10" />
                         <span className="relative z-10">0778-62-0815</span>
                       </a>

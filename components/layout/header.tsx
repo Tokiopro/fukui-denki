@@ -58,10 +58,10 @@ export default function Header() {
 
             <a
               href="tel:0778620815"
-              className="relative group flex flex-col md:flex-row items-center justify-center bg-yellow-400 hover:bg-yellow-500 text-blue-900 p-2 md:px-4 md:py-2 rounded-full shadow-sm hover:shadow-md transition-all transform hover:scale-105"
+              className="relative group flex flex-col md:flex-row items-center justify-center bg-[#e85a2a] hover:bg-[#d14e22] text-white p-2 md:px-4 md:py-2 rounded-full shadow-sm hover:shadow-md transition-all transform hover:scale-105"
               title="電話をかける"
             >
-              <span className="absolute inset-0 rounded-full animate-pulse-soft bg-yellow-400/50" />
+              <span className="absolute inset-0 rounded-full animate-pulse-soft bg-[#e85a2a]/50" />
               <Phone size={20} className="md:mr-2 fill-current relative z-10" />
               <span className="hidden md:inline text-lg font-bold relative z-10">
                 0778-62-0815
@@ -75,7 +75,7 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="relative font-medium text-gray-600 hover:text-blue-600 transition-colors text-sm after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-yellow-400 after:transition-all hover:after:w-full"
+                className="relative font-medium text-gray-600 hover:text-[#2b5ea7] transition-colors text-sm after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#2b5ea7] after:transition-all hover:after:w-full"
               >
                 {link.name}
               </a>
@@ -104,7 +104,7 @@ export default function Header() {
               key={link.name}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="text-base font-medium text-gray-700 py-3 px-4 rounded-lg hover:bg-orange-50 transition-colors"
+              className="text-base font-medium text-gray-700 py-3 px-4 rounded-lg hover:bg-blue-50 transition-colors"
               style={{
                 animation: isMenuOpen
                   ? `fade-right 300ms ease-out ${idx * 50}ms both`

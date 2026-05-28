@@ -21,17 +21,17 @@ export default function AreaSection() {
         <div className="bg-gray-800 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl">
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <MapPin className="text-yellow-400 animate-bounce-subtle" />
+              <MapPin className="text-[#2b5ea7] animate-bounce-subtle" />
               対応エリア
             </h3>
             <p className="text-lg mb-8 leading-relaxed text-gray-300">
               鯖江市を拠点に、
-              <span className="text-white font-bold border-b border-yellow-400">
+              <span className="text-white font-bold border-b border-[#2b5ea7]">
                 フットワーク軽く
               </span>
               回っています。
               <br />
-              <span className="text-yellow-200 font-bold mt-2 inline-block">
+              <span className="text-blue-300 font-bold mt-2 inline-block">
                 エリア外でもお気軽にご相談下さい。
               </span>
             </p>
@@ -41,8 +41,8 @@ export default function AreaSection() {
                   key={city}
                   className={`px-4 py-2 rounded-full font-bold border transition-all duration-300 cursor-default ${
                     city === "鯖江市"
-                      ? "bg-yellow-400/20 text-yellow-300 border-yellow-400/50 ring-2 ring-yellow-400/30 shadow-lg shadow-yellow-400/10"
-                      : "bg-gray-700/50 text-yellow-400 border-gray-600 hover:bg-gray-700"
+                      ? "bg-[#2b5ea7]/30 text-blue-300 border-[#2b5ea7]/50 ring-2 ring-[#2b5ea7]/30 shadow-lg shadow-[#2b5ea7]/10"
+                      : "bg-gray-700/50 text-blue-300 border-gray-600 hover:bg-gray-700"
                   }`}
                 >
                   {city}

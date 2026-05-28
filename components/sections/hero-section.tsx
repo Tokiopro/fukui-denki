@@ -16,15 +16,15 @@ export default function HeroSection() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-orange-50/80 via-white/60 to-white/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#f0f4f8]/80 via-white/60 to-white/95" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/30 via-transparent to-transparent" />
       </div>
 
       {/* Floating Decorative Elements */}
-      <div className="absolute top-20 right-[15%] w-24 h-24 bg-yellow-300/20 rounded-full blur-xl animate-float" />
+      <div className="absolute top-20 right-[15%] w-24 h-24 bg-[#2b5ea7]/20 rounded-full blur-xl animate-float" />
       <div className="absolute top-40 left-[10%] w-32 h-32 bg-blue-300/15 rounded-full blur-2xl animate-float-slow" />
-      <div className="absolute bottom-20 right-[25%] w-20 h-20 bg-orange-200/20 rounded-full blur-lg animate-float-slow" />
-      <div className="absolute top-1/2 left-[5%] w-16 h-16 bg-yellow-400/10 rounded-full blur-xl animate-float" />
+      <div className="absolute bottom-20 right-[25%] w-20 h-20 bg-[#1a2744]/10 rounded-full blur-lg animate-float-slow" />
+      <div className="absolute top-1/2 left-[5%] w-16 h-16 bg-[#2b5ea7]/10 rounded-full blur-xl animate-float" />
 
       <div className="container mx-auto px-4 relative z-10 text-center md:text-left">
         <HeroEntrance>
@@ -39,7 +39,7 @@ export default function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
                 鯖江市の<br className="md:hidden" />
                 <span className="relative inline-block px-2 z-10">
-                  <span className="absolute inset-0 bg-yellow-300 transform -rotate-1 rounded-lg -z-10 shadow-[0_0_20px_rgba(250,204,21,0.3)]" />
+                  <span className="absolute inset-0 bg-[#2b5ea7] transform -rotate-1 rounded-lg -z-10 shadow-[0_0_20px_rgba(43,94,167,0.3)]" />
                   町の電気工事屋さん
                 </span>
               </h1>
@@ -60,14 +60,14 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
                   href="tel:0778620815"
-                  className="group bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg py-4 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2 border-b-4 border-yellow-600 active:border-b-0 active:translate-y-1"
+                  className="group bg-[#e85a2a] hover:bg-[#d14e22] text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2 border-b-4 border-[#b8401c] active:border-b-0 active:translate-y-1"
                 >
                   <Phone className="w-6 h-6 fill-current group-hover:animate-bounce-subtle" />
                   0778-62-0815
                 </a>
                 <a
                   href="mailto:sasaki0777@gmail.com?subject=【HPからお問い合わせ】"
-                  className="bg-white hover:bg-gray-50 text-blue-600 font-bold text-lg py-4 px-8 rounded-full shadow-md border-2 border-blue-100 flex items-center justify-center gap-2 hover:text-blue-700 transition-all hover:-translate-y-0.5"
+                  className="bg-white hover:bg-gray-50 text-[#2b5ea7] font-bold text-lg py-4 px-8 rounded-full shadow-md border-2 border-[#2b5ea7]/20 flex items-center justify-center gap-2 hover:text-[#1a2744] transition-all hover:-translate-y-0.5"
                 >
                   <Mail className="w-6 h-6" />
                   メールで相談

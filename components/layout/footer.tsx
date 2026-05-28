@@ -27,8 +27,8 @@ export default function Footer() {
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6 text-white font-bold text-2xl">
-            <div className="bg-yellow-400 p-1 rounded transform -rotate-6">
-              <Wrench className="w-5 h-5 text-blue-900" />
+            <div className="bg-[#2b5ea7] p-1 rounded transform -rotate-6">
+              <Wrench className="w-5 h-5 text-white" />
             </div>
             佐々木電工
           </div>
@@ -37,14 +37,14 @@ export default function Footer() {
             <br />
             福井県知事登録 第 202200265
             <br />
-            <span className="text-yellow-500">インボイス登録店</span>
+            <span className="text-[#2b5ea7]">インボイス登録店</span>
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-sm">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="hover:text-white transition-colors border-b border-transparent hover:border-yellow-400 pb-0.5"
+                className="hover:text-white transition-colors border-b border-transparent hover:border-[#2b5ea7] pb-0.5"
               >
                 {link.name}
               </a>
