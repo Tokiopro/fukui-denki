@@ -11,6 +11,7 @@ import CompanySection from "@/components/sections/company-section";
 import Footer from "@/components/layout/footer";
 import ScrollReveal from "@/components/ui/scroll-reveal";
 import StaggerChildren from "@/components/ui/stagger-children";
+import StickyCta from "@/components/ui/sticky-cta";
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
         </ScrollReveal>
       </main>
       <Footer />
+      <StickyCta />
     </>
   );
 }

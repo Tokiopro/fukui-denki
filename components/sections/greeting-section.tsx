@@ -18,7 +18,7 @@ export default function GreetingSection() {
                 <div className="absolute inset-0 bg-[#2b5ea7] rounded-2xl transform translate-x-3 translate-y-3" />
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-lg border-2 border-white/30">
                   <Image
-                    src="/images/電気_代表写真.jpg"
+                    src="/images/ceo.jpg"
                     alt="代表 佐々木 義徳"
                     fill
                     className="object-cover"

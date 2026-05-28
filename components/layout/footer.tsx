@@ -24,7 +24,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <footer className="bg-[#0d1b33] text-gray-400 py-12">
+      <footer className="bg-[#0d1b33] text-gray-400 py-12 pb-[100px]">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6 text-white font-bold text-2xl">
             <div className="bg-[#2b5ea7] p-1 rounded transform -rotate-6">
