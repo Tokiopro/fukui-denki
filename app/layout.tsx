@@ -18,6 +18,11 @@ export const metadata: Metadata = {
       "福井県鯖江市の電気工事店。エアコン・照明・コンセントなど電気の困りごとに駆けつけます。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/ogp.png", width: 1200, height: 630 }],
+  },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 

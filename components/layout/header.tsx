@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Phone, Mail, Wrench, Menu, X } from "lucide-react";
+import { Phone, Mail, Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "ホーム", href: "#home" },
@@ -37,12 +37,9 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <a
             href="#home"
-            className="font-bold text-xl md:text-2xl tracking-tighter flex items-center gap-2 text-blue-800"
+            className="flex items-center"
           >
-            <div className="bg-yellow-400 p-1.5 rounded-lg transform rotate-3 shadow-sm">
-              <Wrench className="w-5 h-5 md:w-6 md:h-6 text-blue-900" />
-            </div>
-            佐々木電工
+            <img src="/logo.png" alt="佐々木電工" className="h-8 md:h-10 w-auto" />
           </a>
         </div>
 
