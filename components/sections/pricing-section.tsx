@@ -64,12 +64,15 @@ export default function PricingSection() {
                 }`}
               >
                 <div className="flex flex-col">
-                  <span className="font-medium text-white flex items-center gap-2">
+                  <span
+                    className="font-medium text-white flex items-center gap-2"
+                    style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+                  >
                     <span className="w-2 h-2 bg-[#f0c832] rounded-full shrink-0" />
                     {price.item}
                   </span>
                   {price.desc && (
-                    <span className="text-xs text-gray-300 mt-1 ml-4 whitespace-pre-wrap leading-relaxed">
+                    <span className="text-[15px] md:text-xs text-gray-300 mt-1 ml-4 whitespace-pre-wrap leading-relaxed">
                       {price.desc}
                     </span>
                   )}
@@ -80,10 +83,15 @@ export default function PricingSection() {
               </div>
             ))}
           </div>
-          <div className="p-6 bg-white/5 text-center text-sm text-gray-300 font-medium border-t border-white/10">
-            現地確認後に正式なお見積もりをいたします。
-            <br />
-            お見積もり後のキャンセルも可能ですので、まずはお気軽にご相談ください。
+          <div
+            className="p-6 bg-white/5 text-center text-[15px] md:text-sm text-gray-300 font-medium border-t border-white/10 leading-relaxed"
+            style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+          >
+            <span className="inline-block">現地確認後に</span>
+            <span className="inline-block">正式なお見積もりをいたします。</span>
+            <br className="hidden md:inline" />
+            <span className="inline-block">お見積もり後のキャンセルも可能ですので、</span>
+            <span className="inline-block">まずはお気軽にご相談ください。</span>
           </div>
         </div>
       </div>
