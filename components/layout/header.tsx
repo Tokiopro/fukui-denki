@@ -28,8 +28,8 @@ export default function Header() {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-md py-1.5 border-b border-gray-100"
-          : "bg-white/95 backdrop-blur-sm py-2 shadow-sm border-b border-transparent"
+          ? "bg-white shadow-md py-1 border-b border-gray-100"
+          : "bg-white/95 backdrop-blur-sm py-1.5 shadow-sm border-b border-transparent"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -39,7 +39,7 @@ export default function Header() {
             href="#home"
             className="flex items-center"
           >
-            <img src="/logo.png" alt="佐々木電工" className="h-12 md:h-16 w-auto" />
+            <img src="/logo.png" alt="佐々木電工" className="h-14 md:h-20 w-auto" />
           </a>
         </div>
 
