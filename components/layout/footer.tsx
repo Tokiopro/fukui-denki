@@ -32,11 +32,14 @@ export default function Footer() {
             </div>
             佐々木電工
           </div>
-          <p className="mb-6 text-sm leading-relaxed">
-            〒916-0084 福井県鯖江市小泉町30-5-15
-            <br />
-            福井県知事登録 第 202200265
-            <br />
+          <p
+            className="mb-6 text-[15px] md:text-sm leading-relaxed"
+            style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+          >
+            <span className="inline-block">〒916-0084 福井県鯖江市小泉町30-5-15</span>
+            <br className="hidden md:inline" />
+            <span className="inline-block">福井県知事登録 第 202200265</span>
+            <br className="hidden md:inline" />
             <span className="text-[#f0c832]">インボイス登録店</span>
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-sm">

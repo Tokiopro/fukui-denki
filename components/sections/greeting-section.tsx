@@ -41,36 +41,49 @@ export default function GreetingSection() {
                 <span className="bg-[#f0c832]/20 text-[#f0c832] px-4 py-1 rounded-full text-sm font-bold mb-2 inline-block border border-[#f0c832]/30">
                   ごあいさつ
                 </span>
-                <h2 className="text-2xl md:text-4xl font-bold text-white leading-snug" style={{ wordBreak: "keep-all" }}>
+                <h2
+                  className="text-2xl md:text-4xl font-bold text-white leading-snug"
+                  style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+                >
                   「ちょっと見てほしい」
-                  <br />
+                  <br className="hidden md:inline" />
                   <span className="text-[#f0c832]">気軽に頼れる</span>
-                  <br />
+                  <br className="hidden md:inline" />
                   <span className="inline-block">町の電気屋さんで</span>
                   <span className="inline-block">ありたい</span>
                 </h2>
               </div>
 
-              <div className="space-y-4 text-gray-300 text-lg leading-relaxed font-medium">
-                <p>
-                  こんにちは！
-                  <br />
-                  鯖江市の電気工事店『佐々木電工』の代表、佐々木です。
-                  <br />
-                  子供の頃から機械いじりが好きで、この仕事を始めて16年になります。
+              <div className="space-y-4 text-gray-300 text-base md:text-lg leading-relaxed font-medium">
+                <p style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}>
+                  <span className="inline-block">こんにちは！</span>
+                  <br className="hidden md:inline" />
+                  <span className="inline-block">鯖江市の電気工事店『佐々木電工』の代表、</span>
+                  <span className="inline-block">佐々木です。</span>
+                  <br className="hidden md:inline" />
+                  <span className="inline-block">子供の頃から機械いじりが好きで、</span>
+                  <span className="inline-block">この仕事を始めて16年になります。</span>
                 </p>
-                <p className="bg-white/10 p-4 rounded-xl border border-white/20 text-white">
+                <p
+                  className="bg-white/10 p-4 rounded-xl border border-white/20 text-white"
+                  style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+                >
                   <span className="text-2xl mr-2">💡</span>
-                  「スイッチ1個の交換でも来てくれるかな？」
-                  <br />
-                  そんな時こそ、遠慮なく私を頼ってください。
+                  <span className="inline-block">「スイッチ1個の交換でも</span>
+                  <span className="inline-block">来てくれるかな？」</span>
+                  <br className="hidden md:inline" />
+                  <span className="inline-block">そんな時こそ、</span>
+                  <span className="inline-block">遠慮なく私を頼ってください。</span>
                 </p>
-                <p>
-                  コンセント1つの不具合でも、放っておくと事故の元。
-                  <br />
-                  「あ、佐々木さんに電話しよう」と思い出してもらえるような、
-                  <br />
-                  身近で親しみやすい存在を目指しています。
+                <p style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}>
+                  <span className="inline-block">コンセント1つの不具合でも、</span>
+                  <span className="inline-block">放っておくと事故の元。</span>
+                  <br className="hidden md:inline" />
+                  <span className="inline-block">「あ、佐々木さんに電話しよう」と</span>
+                  <span className="inline-block">思い出してもらえるような、</span>
+                  <br className="hidden md:inline" />
+                  <span className="inline-block">身近で親しみやすい存在を</span>
+                  <span className="inline-block">目指しています。</span>
                 </p>
               </div>
 
