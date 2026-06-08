@@ -24,10 +24,10 @@ export default function StickyCta() {
           style={{ background: "linear-gradient(135deg, #2b5ea7, #1a2744)", boxShadow: "0 4px 16px rgba(43,94,167,.3)" }}
         >
           <Mail size={20} strokeWidth={2.5} />
-          <span className="text-[14px] font-[900] leading-tight">
+          <span className="text-[15px] font-[900] leading-tight" style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}>
             メールで
-            <br />
-            無料相談する
+            <br className="md:hidden" />
+            <span className="inline-block">無料相談する</span>
           </span>
         </a>
 
@@ -38,10 +38,10 @@ export default function StickyCta() {
           style={{ background: "#e85a2a", boxShadow: "0 4px 16px rgba(232,90,42,.3)" }}
         >
           <Phone size={20} strokeWidth={2.5} className="fill-current" />
-          <span className="text-[14px] font-[900] leading-tight">
+          <span className="text-[15px] font-[900] leading-tight" style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}>
             電話で
-            <br />
-            無料相談する
+            <br className="md:hidden" />
+            <span className="inline-block">無料相談する</span>
           </span>
         </a>
       </div>

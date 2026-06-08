@@ -46,11 +46,15 @@ export default function HeroSection() {
             </HeroItem>
 
             <HeroItem delay={300}>
-              <p className="text-xl md:text-2xl text-white mb-8 font-medium">
-                「電気の困った」に、<br className="md:hidden" />
-                すぐ駆けつけます。
-                <br />
-                <span className="text-base md:text-lg mt-2 inline-block text-gray-300">
+              <p
+                className="text-xl md:text-2xl text-white mb-8 font-medium"
+                style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+              >
+                <span className="inline-block">「電気の困った」に、</span>
+                <br className="md:hidden" />
+                <span className="inline-block">すぐ駆けつけます。</span>
+                <br className="hidden md:inline" />
+                <span className="text-[17px] md:text-lg mt-2 inline-block text-gray-300">
                   コンセント1つからOK。有資格者が丁寧に対応します。
                 </span>
               </p>

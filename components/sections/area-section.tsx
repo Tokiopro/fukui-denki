@@ -60,12 +60,12 @@ export default function AreaSection() {
               <MapPin className="text-[#f0c832] animate-bounce-subtle" />
               対応エリア
             </h3>
-            <p className="text-base md:text-lg mb-8 leading-relaxed text-gray-300" style={{ wordBreak: "keep-all" }}>
-              鯖江市を拠点に、
+            <p className="text-[17px] md:text-lg mb-8 leading-relaxed text-gray-300" style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}>
+              <span className="inline-block">鯖江市を拠点に、</span>
               <br className="md:hidden" />
               <span className="text-white font-bold border-b border-[#2b5ea7]">フットワーク軽く</span>
               回っています。
-              <br />
+              <br className="hidden md:inline" />
               <span className="text-[#f0c832] font-bold mt-2 inline-block">
                 エリア外でも
                 <br className="md:hidden" />

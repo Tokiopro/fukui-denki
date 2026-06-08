@@ -33,8 +33,13 @@ export default function CompanySection() {
                     所在地
                   </th>
                   <td className="py-4 px-2 text-gray-800">
-                    〒916-0084 福井県鯖江市小泉町30-5-15
-                    <br />
+                    <span
+                      className="inline-block"
+                      style={{ wordBreak: "keep-all", overflowWrap: "anywhere" }}
+                    >
+                      〒916-0084 福井県鯖江市小泉町30-5-15
+                    </span>
+                    <br className="hidden md:inline" />
                     <a
                       href="https://maps.app.goo.gl/ugBP4m1XfRqHtxV2A"
                       target="_blank"
