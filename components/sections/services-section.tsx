@@ -69,9 +69,6 @@ export default function ServicesSection() {
           >
             <span className="inline-block">一般家庭の小さなお困りごとから、</span>
             <span className="inline-block">店舗の配線工事まで。</span>
-            <br className="hidden md:inline" />
-            <span className="inline-block">アイコンをクリックすると詳細が見れるわけではありませんが、</span>
-            <span className="inline-block">一目でわかるようにしました。</span>
           </p>
         </div>
 
@@ -107,7 +104,7 @@ export default function ServicesSection() {
             </div>
             <div className="md:ml-auto bg-gray-100 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2">
               <ShieldCheck size={16} />
-              登録電気工事業者 第202200265号
+              登録電気工事業者 第20220026号
             </div>
           </div>
 

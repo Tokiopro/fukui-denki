@@ -55,7 +55,7 @@ export default function CompanySection() {
                     登録番号
                   </th>
                   <td className="py-4 px-2 text-gray-800">
-                    登録電気工事業者 福井県知事登録 第 202200265
+                    登録電気工事業者 福井県知事登録 第 20220026
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
