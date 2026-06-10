@@ -38,7 +38,7 @@ export default function Footer() {
           >
             <span className="inline-block">〒916-0084 福井県鯖江市小泉町30-5-15</span>
             <br className="hidden md:inline" />
-            <span className="inline-block">福井県知事登録 第 202200265</span>
+            <span className="inline-block">福井県知事登録 第 20220026</span>
             <br className="hidden md:inline" />
             <span className="text-[#f0c832]">インボイス登録店</span>
           </p>
